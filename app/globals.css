@@ -1,0 +1,156 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-archivo-black: "Archivo Black", sans-serif;
+  --font-raleway: "Raleway", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-raleway);
+  /* Removed static background gradient from body, now handled by AnimatedGradientBackground */
+  min-height: 100vh;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(15, 23, 42, 0.5);
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(135deg, #2563eb, #1e40af);
+}
+
+/* Smooth animations */
+* {
+  transition: all 0.3s ease;
+}
+
+/* Focus styles */
+button:focus,
+input:focus,
+textarea:focus {
+  outline: 2px solid #3b82f6;
+  outline-offset: 2px;
+}
+
+/* Selection styles */
+::selection {
+  background: rgba(59, 130, 246, 0.3);
+  color: white;
+}
+
+/* Scrolling animations for project brands */
+@keyframes scroll-right {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-scroll-right {
+  animation: scroll-right 30s linear infinite;
+}
+
+.animate-scroll-left {
+  animation: scroll-left 25s linear infinite;
+}
+
+.animate-scroll-right-slow {
+  animation: scroll-right 35s linear infinite;
+}
+
+/* Pause animation on hover */
+.animate-scroll-right:hover,
+.animate-scroll-left:hover,
+.animate-scroll-right-slow:hover {
+  animation-play-state: paused;
+}
+
+/* Keyframes for floating elements */
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0) translateX(0) rotate(0deg);
+  }
+  25% {
+    transform: translateY(-10px) translateX(10px) rotate(5deg);
+  }
+  50% {
+    transform: translateY(10px) translateX(-10px) rotate(-5deg);
+  }
+  75% {
+    transform: translateY(-5px) translateX(5px) rotate(2deg);
+  }
+}
+
+.animate-float {
+  animation: float 15s ease-in-out infinite;
+}
+
+/* Animation delays for floating elements */
+.animation-delay-2000 {
+  animation-delay: 2s;
+}
+
+.animation-delay-4000 {
+  animation-delay: 4s;
+}
+
+/* New keyframes for jumping dots */
+@keyframes jump-dot {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px); /* Adjust jump height as needed */
+  }
+}
+
+.animate-jump-dot {
+  animation: jump-dot 0.6s ease-in-out infinite; /* Adjust speed as needed */
+  display: inline-block; /* Required for transform to work */
+}
+
+/* Staggered animation delays for dots */
+.animation-delay-0 {
+  animation-delay: 0s;
+}
+.animation-delay-100 {
+  animation-delay: 0.1s;
+}
+.animation-delay-200 {
+  animation-delay: 0.2s;
+}
