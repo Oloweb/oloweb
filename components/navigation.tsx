@@ -81,7 +81,7 @@ export default function Navigation({ showHomeLink = true }: NavigationProps) {
             {/* Changed button to Link and updated text */}
             <Link
               href="/na-mieru"
-              className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg font-semibold transition-colors"
+              className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-full font-semibold transition-colors"
             >
               Projekt na mieru
             </Link>
@@ -132,7 +132,7 @@ export default function Navigation({ showHomeLink = true }: NavigationProps) {
               {/* Changed button to Link and updated text */}
               <Link
                 href="/na-mieru"
-                className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg font-semibold transition-colors w-fit"
+                className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-full font-semibold transition-colors w-fit"
               >
                 Projekt na mieru
               </Link>

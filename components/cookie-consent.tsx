@@ -52,19 +52,19 @@ export default function CookieConsent({ onOpenSettings }: CookieConsentProps) {
         <div className="flex gap-3 flex-shrink-0">
           <Button
             onClick={handleDeclineAll}
-            className="border border-white/20 text-white px-5 py-2 rounded-lg text-sm font-semibold hover:bg-white/10 transition-colors"
+            className="border border-white/20 text-white px-5 py-2 rounded-full text-sm font-semibold hover:bg-white/10 transition-colors"
           >
             Odmietnuť všetko
           </Button>
           <Button
             onClick={onOpenSettings}
-            className="border border-white/20 text-white px-5 py-2 rounded-lg text-sm font-semibold hover:bg-white/10 transition-colors"
+            className="border border-white/20 text-white px-5 py-2 rounded-full text-sm font-semibold hover:bg-white/10 transition-colors"
           >
             Nastavenia súborov cookie
           </Button>
           <Button
             onClick={handleAcceptAll}
-            className="bg-blue-600 hover:bg-blue-700 text-white px-5 py-2 rounded-lg text-sm font-semibold transition-colors"
+            className="bg-blue-600 hover:bg-blue-700 text-white px-5 py-2 rounded-full text-sm font-semibold transition-colors"
           >
             Prijať všetko
           </Button>

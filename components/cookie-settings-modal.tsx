@@ -193,19 +193,19 @@ export default function CookieSettingsModal({ isOpen, onClose }: CookieSettingsM
         <div className="flex justify-end gap-3 pt-4">
           <Button
             onClick={handleDeclineAll}
-            className="border border-white/20 text-white px-5 py-2 rounded-lg text-sm font-semibold hover:bg-white/10 transition-colors"
+            className="border border-white/20 text-white px-5 py-2 rounded-full text-sm font-semibold hover:bg-white/10 transition-colors"
           >
             Odmietnuť všetko
           </Button>
           <Button
             onClick={handleAcceptAll}
-            className="bg-blue-600 hover:bg-blue-700 text-white px-5 py-2 rounded-lg text-sm font-semibold transition-colors"
+            className="bg-blue-600 hover:bg-blue-700 text-white px-5 py-2 rounded-full text-sm font-semibold transition-colors"
           >
             Prijať všetko
           </Button>
           <Button
             onClick={handleSavePreferences}
-            className="bg-gradient-to-r from-blue-500 to-blue-700 text-white px-5 py-2 rounded-lg text-sm font-semibold hover:shadow-lg hover:shadow-blue-500/25 transition-all duration-300"
+            className="bg-gradient-to-r from-blue-500 to-blue-700 text-white px-5 py-2 rounded-full text-sm font-semibold hover:shadow-lg hover:shadow-blue-500/25 transition-all duration-300"
           >
             Uložiť preferencie
           </Button>
