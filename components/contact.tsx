@@ -1,5 +1,5 @@
 import { Mail, Phone, MapPin } from "lucide-react"
-import ContactForm from "./contact-form" // Import the new ContactForm component
+// import ContactForm from "./contact-form" // Import the new ContactForm component
 
 export default function Contact() {
   return (
@@ -90,7 +90,7 @@ export default function Contact() {
             </div>
           </div>
           {/* Contact Form */}
-          <ContactForm />
+          {/* <ContactForm /> */}
         </div>
       </div>
     </section>

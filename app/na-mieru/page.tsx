@@ -2,7 +2,6 @@ import type { Metadata } from "next"
 import Navigation from "@/components/navigation"
 import Footer from "@/components/footer"
 import CustomHero from "@/components/custom-hero"
-import ContactForm from "@/components/contact-form" // Import ContactForm directly
 import Process from "@/components/process"
 
 export const metadata: Metadata = {
@@ -72,8 +71,6 @@ export default function CustomSolutions() {
                   </li>
                 </ul>
               </div>
-              {/* Right side - Contact Form only */}
-              <ContactForm />
             </div>
           </div>
         </section>

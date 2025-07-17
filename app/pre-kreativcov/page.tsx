@@ -3,7 +3,7 @@ import Navigation from "@/components/navigation"
 import Footer from "@/components/footer"
 import CreativesHero from "@/components/creatives-hero"
 import Projects from "@/components/projects"
-import ContactForm from "@/components/contact-form" // Changed from Contact to ContactForm
+// import ContactForm from "@/components/contact-form" // Remove this line
 
 export const metadata: Metadata = {
   title: "Pre kreatívcov - Oloweb.sk", // Updated title
@@ -71,7 +71,7 @@ export default function CreativesSolutions() {
                 </ul>
               </div>
               {/* Right side - Contact Form (now part of the Contact component) */}
-              <ContactForm />
+              {/* <ContactForm /> */}
             </div>
           </div>
         </section>
