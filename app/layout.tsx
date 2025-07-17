@@ -1,4 +1,5 @@
 import type React from "react"
+import { Suspense } from "react"
 import type { Metadata } from "next"
 import { Archivo_Black, Raleway } from "next/font/google"
 import "./globals.css"
@@ -67,7 +68,9 @@ export default function RootLayout({
     <html lang="sk" className={`${archivoBlack.variable} ${raleway.variable}`}>
       <body className="antialiased">
         <AnimatedGradientBackground>
-          <ScrollToTop>{children}</ScrollToTop> {/* Wrap children with ScrollToTop */}
+          <Suspense fallback={null}>
+            <ScrollToTop>{children}</ScrollToTop>
+          </Suspense>
         </AnimatedGradientBackground>
       </body>
     </html>
