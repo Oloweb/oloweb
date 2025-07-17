@@ -42,7 +42,7 @@ export default function Hero() {
             <div className="flex flex-col sm:flex-row gap-4">
               <Link
                 href="/na-mieru"
-                className="w-full sm:w-auto bg-gradient-to-r from-blue-500 to-blue-700 text-white px-8 py-4 rounded-full font-semibold hover:shadow-lg hover:shadow-blue-500/25 transition-all duration-300 flex items-center justify-center"
+                className="w-full lg:w-auto bg-gradient-to-r from-blue-500 to-blue-700 text-white px-8 py-4 rounded-[15px] font-semibold hover:shadow-lg hover:shadow-blue-500/25 transition-all duration-300 flex items-center justify-center"
               >
                 Začať projekt
               </Link>
@@ -58,7 +58,7 @@ export default function Hero() {
                     }
                   }, 100)
                 }}
-                className="w-full sm:w-auto border border-white/20 text-white px-8 py-4 rounded-full font-semibold hover:bg-white/10 transition-all duration-300 flex items-center justify-center"
+                className="w-full lg:w-auto border border-white/20 text-white px-8 py-4 rounded-[15px] font-semibold hover:bg-white/10 transition-all duration-300 flex items-center justify-center"
               >
                 Naše služby
               </Link>

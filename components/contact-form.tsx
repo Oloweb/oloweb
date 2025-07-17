@@ -71,7 +71,7 @@ export default function ContactForm() {
         <button
           type="submit"
           disabled={isPending} // Disable button during submission
-          className="w-full bg-gradient-to-r from-blue-500 to-blue-700 text-white px-8 py-4 rounded-full font-semibold hover:shadow-lg hover:shadow-blue-500/25 transition-all duration-300 flex items-center justify-center space-x-2 uppercase disabled:opacity-50 disabled:cursor-not-allowed"
+          className="w-full bg-gradient-to-r from-blue-500 to-blue-700 text-white px-8 py-4 rounded-[15px] font-semibold hover:shadow-lg hover:shadow-blue-500/25 transition-all duration-300 flex items-center justify-center space-x-2 uppercase disabled:opacity-50 disabled:cursor-not-allowed"
         >
           {isPending ? (
             <>

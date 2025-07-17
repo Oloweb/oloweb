@@ -191,7 +191,7 @@ export default function BusinessServices() {
         </div>
 
         <div className="text-center mt-12">
-          <button className="w-full sm:w-auto bg-gradient-to-r from-blue-500 to-blue-700 text-white px-8 py-4 rounded-full font-semibold hover:shadow-lg hover:shadow-blue-500/25 transition-all duration-300">
+          <button className="w-full sm:w-auto bg-gradient-to-r from-blue-500 to-blue-700 text-white px-8 py-4 rounded-[15px] font-semibold hover:shadow-lg hover:shadow-blue-500/25 transition-all duration-300">
             Konzultácia zdarma
           </button>
         </div>

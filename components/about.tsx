@@ -88,7 +88,7 @@ export default function About({ hideMoreAboutUsButton = false }: AboutProps) {
             {!hideMoreAboutUsButton && ( // Conditionally render the button
               <Link
                 href="/riesenia-pre-firmy"
-                className="w-full sm:w-auto bg-gradient-to-r from-blue-500 to-blue-700 text-white px-8 py-4 rounded-full font-semibold hover:shadow-lg hover:shadow-blue-500/25 transition-all duration-300 flex items-center justify-center"
+                className="w-full lg:w-auto bg-gradient-to-r from-blue-500 to-blue-700 text-white px-8 py-4 rounded-[15px] font-semibold hover:shadow-lg hover:shadow-blue-500/25 transition-all duration-300 flex items-center justify-center"
               >
                 Viac o nás
               </Link>
